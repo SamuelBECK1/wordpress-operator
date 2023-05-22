@@ -1,5 +1,8 @@
 # wordpress-operator
-// TODO(user): Add simple overview of use/purpose
+simple wordpress operator  
+will create a ready to use wordpress instance with
+- mysql instance + associated service and PVC
+- wordpress instance + associated service and PVC
 
 ## Description
 // TODO(user): An in-depth paragraph about your project and overview of use
