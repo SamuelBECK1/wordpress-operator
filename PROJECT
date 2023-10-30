@@ -20,4 +20,13 @@ resources:
   kind: Wordpress
   path: github.com/SamuelBECK1/wordpress-operator/api/v1alpha1
   version: v1alpha1
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: wordpress.com
+  group: wordpress
+  kind: Backup
+  path: github.com/SamuelBECK1/wordpress-operator/api/v1alpha1
+  version: v1alpha1
 version: "3"

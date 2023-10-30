@@ -1,4 +1,5 @@
 ## Append samples you want in your CSV to this file as resources ##
 resources:
 - wordpress_v1alpha1_wordpress.yaml
+- wordpress_v1alpha1_backup.yaml
 #+kubebuilder:scaffold:manifestskustomizesamples

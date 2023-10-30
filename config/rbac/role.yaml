@@ -18,6 +18,18 @@ rules:
   - update
   - watch
 - apiGroups:
+  - batch
+  resources:
+  - cronjobs
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
   - ""
   resources:
   - persistentvolumeclaims
@@ -37,6 +49,32 @@ rules:
   verbs:
   - get
   - list
+- apiGroups:
+  - wordpress.wordpress.com
+  resources:
+  - backups
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - wordpress.wordpress.com
+  resources:
+  - backups/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - wordpress.wordpress.com
+  resources:
+  - backups/status
+  verbs:
+  - get
+  - patch
+  - update
 - apiGroups:
   - wordpress.wordpress.com
   resources:

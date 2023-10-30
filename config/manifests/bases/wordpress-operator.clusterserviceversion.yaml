@@ -1,0 +1,50 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: ClusterServiceVersion
+metadata:
+  annotations:
+    alm-examples: '[]'
+    capabilities: Basic Install
+  name: wordpress-operator.v0.0.0
+  namespace: placeholder
+spec:
+  apiservicedefinitions: {}
+  customresourcedefinitions:
+    owned:
+    - description: Wordpress is the Schema for the wordpresses API
+      displayName: Wordpress
+      kind: Wordpress
+      name: wordpresses.wordpress.wordpress.com
+      version: v1alpha1
+  description: wordpress
+  displayName: wordpress
+  icon:
+  - base64data: ""
+    mediatype: ""
+  install:
+    spec:
+      deployments: null
+    strategy: ""
+  installModes:
+  - supported: false
+    type: OwnNamespace
+  - supported: false
+    type: SingleNamespace
+  - supported: false
+    type: MultiNamespace
+  - supported: true
+    type: AllNamespaces
+  keywords:
+  - wordpress
+  - mysql
+  links:
+  - name: Wordpress Operator
+    url: https://wordpress-operator.domain
+  maintainers:
+  - email: email1
+    name: name1
+  - email: email2
+    name: name2
+  maturity: alpha
+  provider:
+    name: SamuelBECK1
+  version: 0.0.0

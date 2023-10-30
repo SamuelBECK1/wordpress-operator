@@ -217,8 +217,8 @@ func (r *WordpressReconciler) deploymentForPostgresql(m *wordpressv1alpha1.Wordp
 							Name:  "MYSQL_USER",
 							Value: dbUser,
 						}, {
-							Name:  "MYSQL_RANDOM_ROOT_PASSWORD",
-							Value: "true",
+							Name:  "MYSQL_ROOT_PASSWORD",
+							Value: dbPassword,
 						}, {
 							Name:  "MYSQL_PASSWORD",
 							Value: dbPassword,
